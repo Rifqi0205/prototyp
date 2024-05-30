@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanjut Donasi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/Kami.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+    <!-- Template Stylesheet -->
+    <link href="css/lanjut_donasi.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+   <!-- Navbar Start -->
+   <div class="container-fluid fixed-top px-0 wow fadeIn"  style="color: #001D23;">
+    <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <small><i class="fa fa-map-marker-alt me-2"></i>Kota Palu, Sulawesi Tengah, Indonesia</small>
+            <small class="ms-4"><i class="fa fa-envelope me-2"></i>kamipeduli@gmail.com</small>
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+            <small>Follow us:</small>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-white" >Kami<span class="fw-bold text-primary m-0">Peduli</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Beranda</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle" class="nav-item nav-link active" data-bs-toggle="dropdown">Kategori</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="relawan.html" class="dropdown-item">Relawan</a>
+                        <a href="info_donasi.html" class="dropdown-item">Donasi</a>
+                        <a href="psikososial.html" class="dropdown-item">Psikososial</a>
+                    </div>
+                </div>
+                <a href="peta.html" class="nav-item nav-link">Peta</a>
+                <a href="tentang.html" class="nav-item nav-link">Tentang</a>
+                <a href="login.html" class="nav-item nav-link">Masuk</a>
+                
+            </div>
+            <div class="d-none d-lg-flex ms-2">
+                <a class="btn btn-outline-primary py-2 px-3" href="info_donasi.html">
+                    Donasi Yuk
+                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+    <div class="tentang">
+    </div>
+    <section class="my-6" id="donasi">
+        <center>
+            <h3>Bagi Saudara Kita yang Membutuhkan</h3>
+        </center>
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+              <div class="card rounded-3">
+                <div class="card-body mx-1 my-2">
+                    <div style="position: relative;">
+                        <div class="line"></div>
+                        <div class="text-muted centered-text">Pilih Nominal Donasi</div>
+                    </div>
+                    <div class="kotak"></div>
+                    <div style="position: relative;">
+                        <div class="line"></div>
+                        <div class="text-muted centered-text">Pilih Metode Pembayaran</div>
+                    </div>
+                    <div class="btn-group w-100 my-3 pembayaran" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">
+                            <img src="img/logoGoPay.svg">
+                        </label>
+                        <!-- <button type="radio" class="btn-check" name="btnradio" data-bs-toggle="modal" data-bs-target="#modalOvo"></button> -->
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-bs-target="#modalOvo">
+                        <label class="btn btn-outline-primary" for="btnradio2">
+                            <img src="img/dana.png">
+                        </label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">
+                            <img src="img/ShopeePay.png">
+                        </label>
+                    </div>
+                    <div class="my-2" style="position: relative;">
+                        <div class="line"></div>
+                        <div class="text-muted centered-text">Informasi Donatur</div>
+                    </div>
+
+                    <div class="form-check form-switch switch my-4 p-0">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Sembunyikan Nama Saya (Anonim)</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                    </div>
+
+                    <p style="color: #000; text-align: center; margin: 0 0 2rem 0;">Masuk atau lengkapi data di bawah ini</p>
+
+                    <form>
+                        <div class="mt-4">
+                            <div class="textOnInput">
+                                <label for="inputText">Nama Lengkap</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="textOnInput">
+                                <label for="inputText">Nomor Telepon</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="textOnInput">
+                                <label for="inputText">Email (Opsional)</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="textOnInput">
+                                <label for="inputText">Pesan(Opsional)</label>
+                                <textarea class="form-control" id="" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Ya, Saya telah membaca dan menyetujui Syarat & Ketentuan Donasi
+                            </label>
+                          </div>
+                      </form>
+                      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGopay">
+                        Launch static backdrop modal
+                      </button> -->
+                      <button type="button" class="btn btn-primary btn-lg"  id="donateButton" style="width: 100%; ">Donasi</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="modalGopay" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">QR Code GoPay</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>Lakukan Donasi dengan <br> Scan Kode Dibawah ini</p>
+              <img src="img/qr_gopay.png" alt="" width="75%" /><br>
+              <p style="margin: 1rem;">Scan kode QR</p>
+              <button id="showAlertBtn" class="btn btn-primary" onclick="bayar()">Sudah Bayar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal fade" id="modalDana" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">QR Code GoPay</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Lakukan Donasi dengan <br> Scan Kode Dibawah ini</p>
+                <img src="img/qr_dana.png" alt="" width="75%" /><br>
+                <p style="margin: 1rem;">Scan kode QR</p>
+                <button id="showAlertBtn" class="btn btn-primary" onclick="bayar()">Sudah Bayar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalShopee" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">QR Code GoPay</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Lakukan Donasi dengan <br> Scan Kode Dibawah ini</p>
+                <img src="img/qr_shopee.png" alt="" width="75%" /><br>
+                <p style="margin: 1rem;">Scan kode QR</p>
+                <button id="showAlertBtn" class="btn btn-primary" onclick="bayar()">Sudah Bayar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
+      <script>
+       function bayar() {
+        swal({
+              title: 'Terima Kasih!',
+              text: 'Sudah melakukan donasi. Cek Social Media Kami untuk lebih lanjut.',
+              icon: 'success',
+              confirmButtonText: 'OK'
+            });
+}
+      </script>
+      
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="text-white">Kami<span class="fw-bold text-primary mb-4">Peduli</span></h1>
+                    <p>Kami Peduli siap membantu, Saling Menolong Siapa Saja dan Kapan Saja</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Alamat</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Kota Palu, Sulawesi Tengah, Indonesia</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+62 822-7337-0260</p>
+                    <p><i class="fa fa-envelope me-3"></i>kamipeduli@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Halaman</h5>
+                    <a class="btn btn-link" href="index.html">Beranda</a>
+                    <a class="btn btn-link" href="relawan.html">Relawan</a>
+                    <a class="btn btn-link" href="donasi.html">Donasi</a>
+                    <a class="btn btn-link" href="tentang.html">Tentang</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light m-4">Daftar</h5>
+                    <p>Ayo kita saling membantu sesama</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                       
+                    </div>
+                    <center>
+                    <div class=" text-center ">
+                        Designed By <a>Ekosaviors</a>
+                    </div></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer End -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="js/lanjut_donasi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
